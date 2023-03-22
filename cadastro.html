@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMED</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+
+</head>
+<body>
+    <header class="cabecalho">
+        <h2 class="cabecalho-menu">SMED - Sistema de Contratos</h2>
+        <a class="cabecalho-menu menu__sair" href="#">Sair</a>
+    </header>
+    <section class="container">
+        <div class="container__principal">
+            <ul class="container__principal__lista">
+                <li class="container__lista-item">
+                    <a class="container__lista-link" href="#">Clientes</a>
+                </li>
+                <li class="container__lista-item">
+                    <a class="container__lista-link" href="#">Contratos</a>
+                </li>
+                <li class="container__lista-item">
+                    <a class="container__lista-link" href="#">Propostas</a>
+                </li>
+                <li class="container__lista-item">
+                    <a class="container__lista-link lista-link-relatorio"  href="#">RELATÓRIOS</a>
+                </li>
+            </ul>
+
+            <div class="container__principal__menu">
+                <h1 class="container__menu-titulo"> Cliente - Cadastro</h1>
+                <div class="container__menu-botoes">
+                    <a class="menu__botao" href="#">Cadastro</a>
+                    <a class="menu__botao" href="index.html">Pesquisa</a>
+                </div>              
+            </div>
+        </div>
+    </section>
+    <section class="cadastro">
+        <form>
+            <!-- action="https://api.sheetmonkey.io/form/cmzCpB8Go5KVuzxaXi8aWq" method="post" -->
+            <div class="cadastro__campos">
+                <label class="campo-titulo campo-matriz" for="matriz">É Matriz?</label>
+                <input class="campo" type="checkbox" name="matriz" id="matriz">
+            </div>
+
+            <div class="cadastro__campos">
+                <label class="campo-titulo"  for="tipo-matriz">Matriz</label>
+                <select class="campo" id="tipo-matriz">
+                    <option selected disabled value="">Selecione</option>
+                    <option>INTS Editado</option>
+                    <option>Matriz 1</option>
+                    <option>Teste Editado</option>
+                </select>
+            </div> 
+
+            <div class="cadastro__campos">
+                <label class="campo-titulo"  for="nome">Nome</label>
+                <input class="campo" type="text" name="nome" id="nome">
+            </div>
+
+            <div class="cadastro__campos">
+                <label class="campo-titulo"  for="cnpj">CNPJ</label>
+                <input class="campo"  type="text" name="cnpj" id="cnpj">
+            </div>
+
+            <div class="cadastro__campos">
+                <label class="campo-titulo"  for="tel">Telefone</label>
+                <input class="campo"  type="tel" name="tel" id="tel">
+            </div class="cadastro__campos">
+
+            <div class="cadastro__campos">
+                <label class="campo-titulo"  for="endereco">Endereço</label>
+                <input class="campo"  type="text" name="endereco" id="endereco">
+            </div class="cadastro__campos">
+
+            <div class="cadastro__campos">
+                <label class="campo-titulo"  for="contatos">Contatos</label>
+                <input class="campo"  type="text" name="contatos" id="contatos">
+            </div class="cadastro__campos">
+
+            <div class="cadastro__campos">
+                <label class="campo-titulo"  for="observacao">Observação</label>
+                <textarea rows="5" style="width: 40%" class="campo" name="observacao" id="observacao"></textarea>
+            </div>
+            <div class="form__botoes">
+                <button type="submit" class="form__botao-salvar">Salvar</button>
+                <button type="reset" class="form__botao-limpar">Limpar</button>
+            </div>
+        </form>
+    </section>
+
+
+
+</body>
+</html>

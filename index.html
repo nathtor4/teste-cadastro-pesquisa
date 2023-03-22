@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMED</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <style>
+        table {
+            border-collapse: collapse;
+            border: 1px solid;
+            display: table;
+            width: 99%
+        }
+    </style>
+</head>
+<body>
+    <header class="cabecalho">
+        <h2 class="cabecalho-menu">SMED - Sistema de Contratos</h2>
+        <a class="cabecalho-menu menu__sair" href="#">Sair</a>
+    </header>
+    <section class="container">
+        <div class="container__principal">
+            <ul class="container__principal__lista">
+                <li class="container__lista-item">
+                    <a class="container__lista-link" href="#">Clientes</a>
+                </li>
+                <li class="container__lista-item">
+                    <a class="container__lista-link" href="#">Contratos</a>
+                </li>
+                <li class="container__lista-item">
+                    <a class="container__lista-link" href="#">Propostas</a>
+                </li>
+                <li class="container__lista-item">
+                    <a class="container__lista-link lista-link-relatorio"  href="#">RELATÓRIOS</a>
+                </li>
+            </ul>
+
+            <div class="container__principal__menu">
+                <h1 class="container__menu-titulo"> Cliente - Pesquisa</h1>
+                <div class="container__menu-botoes">
+                    <a class="menu__botao" href="cadastro.html">Cadastro</a>
+                    <a class="menu__botao" href="#">Pesquisa</a>
+                </div>              
+            </div>
+        </div>
+    </section>
+    <section class="input">
+        <form class="input__dados">
+                <label class="input__dados-titulo">Nome</label>
+                <input type="search" class="input__dados-item" value=""><br>
+                <label class="input__dados-titulo">CNPJ</label>
+                <input type="search" class="input__dados-item" value=""><br>
+                <div class="input__botoes">
+                    <button type="search" class="input__botao botao-pesquisar">Pesquisar</button>
+                    <button type="reset" class="input__botao botao-limpar">Limpar</button>
+                </div>
+        </form>
+    </section>
+    <section class="table">
+        <table>
+            <thead>
+                <tr>
+                    <th class="table__estrutura-colunas">Id</th> 
+                    <th class="table__estrutura-colunas">Matriz</th> 
+                    <th class="table__estrutura-colunas">Nome</th> 
+                    <th class="table__estrutura-colunas">CNPJ</th> 
+                    <th class="table__estrutura-colunas">Telefone</th> 
+                    <th class="table__estrutura-colunas">Editar</th> 
+                    <th class="table__estrutura-colunas">Excluir</th>
+                </tr>
+            </thead>
+        </table>
+    </section>
+</body>
+</html>
